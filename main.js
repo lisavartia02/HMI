@@ -5,6 +5,8 @@ const content = document.getElementById('content')
 const dropdown = document.getElementById('dropdown')
 const dropdownContent = document.getElementById('dropdown-content')
 
+const back = document.getElementById('back')
+
 
 function toggleMenu(){
     if (list.classList.contains("hidden")) {
@@ -24,8 +26,12 @@ function toggleContent(){
       
     } else {
         dropdown.classList.add('hidden')
-
     }
 }
 
 content.addEventListener('click', toggleContent)
+
+back.addEventListener('click', () => {
+    list.classList.remove('hidden')
+    dropdown.classList.add('hidden')
+})

@@ -1,3 +1,12 @@
+:root {
+    --background-color: #D9D9D9;
+    --nav-background-color: #1B273D;
+    --primary-color: #FFB600;
+    --light-text-color: #ffffff;
+    --dark-text-color: #000000;
+
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -5,9 +14,8 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-:root {
-    --nav-background-color: #1B273D;
-    --primary-color: #FFB600;
+body {
+    background-color: var(--background-color);
 }
 
 .mobile {
@@ -47,17 +55,51 @@
 
 } 
 
-.list {
-    margin: 20px;
+.list-style {
+    padding: 15vh 20px;
+    font-size: 24px;
+    height: 100vh;
+    position: relative;
+    background-color: var(--light-text-color);
 }
 
+.list-style li {
+    list-style: none;
+    margin-bottom: 15px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.list-style a {
+    text-decoration: none;
+    color: var(--dark-text-color);
+}
+
+.arrow {
+    position: absolute;
+    top: 5vh;
+}
+
+.arrow img {
+    margin-right: 20px;
+}
+
+.book-btn {
+    background-color: var(--primary-color);
+    padding: 10px 22px;
+    text-align: center;
+    border-radius: 10px;
+}
+.book-btn a {
+    color: var(--dark-text-color);
+   
+}
+
+/* Toggle with JS */
 .hidden {
     display: none;
 }
-
-.show {
-    display: block;
-}
+/* ---- */
 
 .desktop {
     display: none;
