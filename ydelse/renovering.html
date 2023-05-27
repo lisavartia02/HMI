@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="da">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Om os - HMI Tømrermester</title>
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/assets/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/assets/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/assets/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/assets/site.webmanifest" />
+    <link rel="mask-icon" href="/assets/safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#2d89ef" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <link rel="stylesheet" href="/styles/main.css" />
+    <link rel="stylesheet" href="/styles/renovering.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@400;600&family=Montserrat:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav>
+      <div class="mobile">
+        <div class="menu" id="menu">
+          <span class="menu-bar"></span>
+          <span class="menu-bar"></span>
+          <span class="menu-bar"></span>
+        </div>
+
+        <div class="brev navicons">
+          <img src="/assets/brev.svg" alt="brev" />
+          <a href="mailto:info@hmitomrermester.dk">E-mail</a>
+        </div>
+
+        <div class="telefon navicons">
+          <img src="/assets/telefon.svg" alt="telefon" />
+          <a href="Tel: +4528225060">Ring op</a>
+        </div>
+      </div>
+
+      <div class="list-style hidden" id="list">
+        <ul>
+          <li><a href="/index.html">Forside</a></li>
+          <li id="content">Ydelse</li>
+          <li><a href="/pages/galleri.html">Galleri</a></li>
+          <li><a href="/pages/omos.html">Om os</a></li>
+          <li class="book-btn">
+            <a href="/pages/kontakt.html">Book et møde</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="dropdown hidden list-style" id="dropdown">
+        <p class="arrow" id="back">
+          <img src="/assets/arrow.svg" alt="" />Tilbage
+        </p>
+
+        <ul class="dropdown-content" id="dropdown-content">
+          <li><a href="/ydelse/døre.html">Døre og viduer</a></li>
+          <li><a href="/ydelse/gulv.html">Gulv</a></li>
+          <li><a href="#">Hegn</a></li>
+          <li><a href="#">Terrasse</a></li>
+          <li><a href="#">Køkken montage</a></li>
+          <li><a href="#">Gipsarbejde</a></li>
+          <li><a href="/ydelse/renovering.html">Renovering</a></li>
+          <li><a href="#">Andre opgaver</a></li>
+        </ul>
+      </div>
+
+      <div class="desktop">
+        <a href="/index.html"><img src="/assets/logo.svg" alt="HMI tømrermester" /></a>
+        <div>
+          <ul class="navbar">
+            <li><a href="/index.html">Forside</a></li>
+
+            <li class="dropdown-menu">
+              <div>Ydelse</div>
+              <ul class="dropdown-content-menu" id="dropdown-content">
+                <li><a href="/ydelse/døre.html">Døre og viduer</a></li>
+                <li><a href="/ydelse/gulv.html">Gulv</a></li>
+                <li><a href="#">Hegn</a></li>
+                <li><a href="#">Terrasse</a></li>
+                <li><a href="#">Køkken montage</a></li>
+                <li><a href="#">Gipsarbejde</a></li>
+                <li><a href="/ydelse/renovering.html">Renovering</a></li>
+                <li><a href="#">Andre opgaver</a></li>
+              </ul>
+            </li>
+
+            <li><a href="/pages/galleri.html">Galleri</a></li>
+            <li><a href="/pages/omos.html">Om os</a></li>
+            <li class="book-btn">
+              <a href="/pages/kontakt.html">Book et møde</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ---- -->
+
+    <section id="kontakt">
+        <div>
+            <h2>Få et tilbud</h2>
+            <form action="mailto:#">
+                <div class="form"> 
+                    <input type="text" placeholder="Navn*"  required>
+                    <input type="text" placeholder="Tlf Nr*"  required>
+                </div>
+               
+                <input type="text" placeholder="E-mail*"  required>
+                <textarea placeholder="Skriv en besked" rows="5"  required></textarea>
+                <input type="text" placeholder="Hvad er 2+3*" required>
+                <input type="submit" value="Send">
+            </form>
+          </div>
+
+      <div class="flex-col">
+        <h2>Vi er sociale</h2>
+
+        <div class="flex radical social-box" >
+          <img class="phone-img" src="/assets/insta-page.png" alt="instagram on a phone" />
+
+          <div class="social-icons">
+            <div class="flex facebook-social">
+              <img class="icons" src="/assets/facebook.svg" alt="facebook icon" />
+              <p>@HMI-Tømrermester</p>
+            </div>
+            <div class="flex">
+              <img class="icons" src="/assets/instagram.svg" alt="instagram icon" />
+              <p>@HMI-Tømrermester</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      
+    </section>
+
+    <div class="body-filler"></div>
+
+    <footer>
+      <div class="footer-container">
+        <div>
+          <h4>følg os på</h4>
+          <div class="social">
+            <a href="#"><img src="/assets/facebook.svg" alt="facebook" /></a>
+
+            <a href="#">
+              <img src="/assets/instagram.svg" alt="instagram" />
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <h4>kontakt os</h4>
+          <ul class="contact">
+            <li>
+              <a href="tel:+4528225060"><b>Tlf: </b>28 22 50 60</a>
+            </li>
+            <li>
+              <a href="mailto:mailto:info@hmitomrermester.dk"
+                ><b>E-mail: </b>info@hmitomrermester.dk</a
+              >
+            </li>
+            <li><b>CVR nr: </b>43 80 62 11</li>
+            <li><b>Adresse: </b>Vibevej 7, 2630 Taastrup</li>
+          </ul>
+        </div>
+      </div>
+
+      <a href="/index.html"><img class="footer-logo" src="/assets/logo.svg" alt="HMI tømrermester" />
+</a>
+      <p class="copy">
+        &copy; 2023 HMI Tømrermester &#8226; <br />
+        All rights reserved.
+      </p>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>
