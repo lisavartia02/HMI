@@ -1,0 +1,169 @@
+p {
+    font-size: 20px;
+}
+
+header {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden; 
+    background-color: #f9d742;
+}
+
+header picture {
+    height: 100%;
+    width: auto;
+    object-fit: contain;
+    margin-left: 200px;
+}
+
+
+.text-overlay {
+position: absolute;
+z-index: 1;
+top: 20vh;
+left: 0;
+margin: 20px;
+width:  65vw;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+.google-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
+
+.video-container {
+    margin-bottom: 30px;
+}
+
+.video-container h2, main h2, .video-container p{
+    margin: 20px;
+    width: 330px;
+}
+
+.video {
+    background-color: lightcoral;
+    width: 375px;
+    height: 210.94px;
+    margin: auto;
+}
+
+main li, main p {
+    margin-left: 35px;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+main a, .info-divs a { 
+    color: var(--dark-text-color);
+}
+
+.information {
+    padding: 20px;
+    background-color: var(--light-text-color);
+}
+
+.info-divs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+    gap: 20px;
+}
+
+.info-divs img {
+    width: 130px;
+}
+
+@media (min-width: 594px) {
+    header picture {
+        height: 100%;
+        width: auto;
+        object-fit: contain;
+        margin-left: 220px;
+    }
+}
+
+@media (min-width: 768px) {
+    header picture {
+        height: 100%;
+        width: 100%;
+        margin-left: 200px;
+        object-fit: cover;
+        margin-left: 0;
+    }
+
+
+    header p {
+        width: 500px;
+    }
+
+    .main-ydelse {
+        display: flex;
+        flex-direction: row;
+    }
+
+    main div {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .video {
+        width: 600px;
+        height: 300px;
+    }
+
+    .google-container {
+        flex-direction: row;
+        margin: 30px;
+    }
+
+    .information {
+        display: flex;
+        margin-top: 40px;
+        justify-content: center;
+    }
+
+    .info-divs {
+        width: 280px;
+        margin-bottom: 0;
+    }
+
+    .info-divs img {
+        width: 100px;
+    }
+
+    .info-divs br {
+        display: block;
+    }
+}
+
+@media (min-width: 1440px) {
+    .text-overlay {
+        margin-left: 150px;
+    }
+}
+
+@media (max-width: 374px) {
+    .video-container h2, main h2, .video-container p{
+        margin: 20px;
+        width: 80vw;
+    }
+    .video {
+        width: 100vw;
+    }
+    .iframe {
+        width: 100vw;
+    }
+}
