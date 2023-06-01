@@ -133,6 +133,7 @@ main a, .info-divs a {
         display: flex;
         margin-top: 40px;
         justify-content: center;
+        gap: 100px;
     }
 
     .info-divs {
