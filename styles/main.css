@@ -216,14 +216,14 @@ body {
     display: flex;
     background-color: var(--dark-background-color);
     flex-direction: column;
-    margin: 20px 0 ;
+    margin: 20px 0;
 }
 
 #kontakt h2 {
     color: var(--light-text-color);
     font-size: 40px;
     text-align: center;
-    margin-top: 20px;
+    margin: 40px 0 20px 0;
 }
 
 form {
@@ -314,6 +314,7 @@ input[type="submit"] {
         flex-direction: row-reverse;
         margin: 20px 0 ;   
         justify-content: center; 
+        align-items: center;
         gap: 20px;
         padding-bottom: 60px;
     }
@@ -323,7 +324,6 @@ input[type="submit"] {
         background-color: var(--light-background-color);
         border-radius: 10px;
         padding: 0 30px;
-        margin-top: 40px;
     }
 
 
@@ -339,7 +339,6 @@ input[type="submit"] {
 
     .radical {
         height: 388px;
-        margin-top: 20px;
     }
     
     form {

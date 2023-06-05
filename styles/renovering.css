@@ -1,0 +1,143 @@
+.heading{
+    text-align: center;
+    font-size: 64px;
+    color: #000000;
+    padding: 1rem;
+    margin: 2rem 0;
+}
+
+.heading span{
+    color: #000000;
+}
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    border-radius: 30px;
+    background: #FFB600;
+    color: #000000;
+    padding: 1rem 1rem;
+    cursor: pointer;
+    font-size: 38px;
+}
+
+.btn:hover{
+    background: #FFB600;
+}
+
+section{
+    padding: 2rem 9%;
+}
+
+.renovering{
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    background: url(../assets/image\ 45.png) no-repeat;
+    background-size: cover;
+    background-position: center; 
+}
+
+.renovering .content{
+    max-width: 50rem;
+}
+
+.renovering .content h3{
+    font-size: 64px;
+    color: #ffffff;
+}
+
+.renovering .content span{
+    font-size: 3rem;
+    color: #9A9A9A;
+    padding: 1rem 0;
+    line-height: 77px;
+}
+
+.renovering-hus .row{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+    padding-bottom: 3rem;
+}
+
+.renovering-hus .row .foto-container{
+    flex: 1 1 40rem;
+    position: relative;
+}
+
+.renovering-hus .row  img{
+    width: 100%;
+    border: 1.5rem solid #1B273d;
+    border-radius: .5rem;
+    box-shadow: 0 .5rem 1rem #9A9A9A;
+    height: 100%;
+    object-fit: cover;
+}
+
+.renovering-hus .row .foto-container h3{
+    position: absolute;
+    top: 50%;
+    transform: rotateY('-50%');
+    font-size: 3rem;
+    background: #9A9A9A;
+    width: 100%;
+    padding: 1rem 2rem;
+    text-align: center;
+    mix-blend-mode: screen;
+}
+
+.renovering-hus .row .content{
+    flex: 1 1 40rem;
+}
+
+.renovering-hus .row .content h3{
+    font-size: 54px;
+    color: #000000;
+}
+
+.renovering-hus .row .content p{
+    font-size: 35px;
+    color: #000000;
+    padding: 5rem 0;
+    padding-top: 1rem;
+    line-height: 1.5rem;
+    padding: 1rem 0;
+    line-height: 1.5;
+}
+
+.galleri .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.galleri .box-container .box{
+    flex: 1 1 30rem;
+    box-shadow: 0 .5rem 1rem #ffffff;
+    border-radius: 5rem;
+    border: 1rem solid #1B273d;
+    position: relative;
+}
+
+.galleri .box-container .box .image{
+    position: relative;
+    text-align: center;
+    padding-top: 2rem;
+    overflow: hidden;
+    gap: 4rem;
+}
+.galleri .box-container .box .image img{
+    height: 25rem;
+    width: 30rem;
+    gap: 4rem;
+}
+
+.galleri .box-container .box:hover .image img{
+    transform: scale(1.1);
+}
+.galleri .box-container .box .content{
+    padding: 2rem;
+    text-align: center;
+}

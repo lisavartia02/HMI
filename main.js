@@ -1,3 +1,4 @@
+// ---- Lisa ----
 const menu = document.getElementById('menu')
 const list = document.getElementById('list')
 
@@ -36,3 +37,74 @@ back.addEventListener('click', () => {
     dropdown.classList.add('hidden')
 })
 
+// -------
+
+const wrapper = document.querySelector('.wrapper')
+const indicators = [...document.querySelectorAll('.indicators button')]
+
+let currentTestimonial = 0 //Default 0
+
+indicators.forEach((item, i) => {
+    item.addEventListener('click', () => {
+        indicators[currentTestimonial].classList.remove('active')
+        wrapper.style.marginLeft = `-${100 * i}%`
+        item.classList.add('active')
+        currentTestimonial = i
+    })
+})
+
+// -------
+// --- Shahad ----  
+
+
+
+
+
+const slider = document.querySelector('.slider');
+const sliderContainer = slider.querySelector('.slider-container');
+const slides = sliderContainer.querySelectorAll('img');
+const prevButton = slider.querySelector('.prev-button');
+const nextButton = slider.querySelector('.next-button');
+let currentIndex = 0;
+
+function showSlide(index) {
+  sliderContainer.style.transform = `translateX(-${index * 100}%)`;
+}
+
+function goToPrevSlide() {
+  currentIndex--;
+  if (currentIndex < 0) {
+    currentIndex = slides.length - 1;
+  }
+  showSlide(currentIndex);
+}
+
+function goToNextSlide() {
+  currentIndex++;
+  if (currentIndex >= slides.length) {
+    currentIndex = 0;
+  }
+  showSlide(currentIndex);
+}
+
+
+
+
+prevButton.addEventListener('click', goToPrevSlide);
+nextButton.addEventListener('click', goToNextSlide);
+
+// Auto slide show for desktop
+const isDesktop = window.matchMedia('(min-width: 768px)');
+
+function handleMediaQuery(event) {
+  if (event.matches) {
+    autoSlideShow = setInterval(goToNextSlide, 5000); // Skift billede hvert 5. sekund
+  } else {
+    clearInterval(autoSlideShow);
+  }
+}
+
+let autoSlideShow;
+
+isDesktop.addListener(handleMediaQuery);
+handleMediaQuery(isDesktop);
