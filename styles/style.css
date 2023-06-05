@@ -153,7 +153,7 @@ button.active{
     flex-direction: column;
 }
 
-.video-container h2, main h2, .video-container p{
+.video-container h2, .video-container p{
     margin: 20px;
     width: 330px;
     text-align: center;
@@ -174,13 +174,39 @@ iframe {
     height: 100%;
 }
 
-main li, main p {
-    margin-left: 35px;
-    margin-bottom: 15px;
-    font-size: 20px;
+main {
+    margin: 30px 0;
 }
 
-main a, .info-divs a { 
+main h2 {
+    text-align: center;
+    margin: 10px;
+}
+
+.main-ydelse {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main li {
+    width: 160px;
+    height: 80px;
+    background-color: var(--dark-background-color);
+    list-style-type: none;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main a {
+    color: var(--light-text-color);
+    font-weight: 600;
+}
+
+
+.info-divs a { 
     color: var(--dark-text-color);
 }
 
