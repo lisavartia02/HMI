@@ -163,10 +163,13 @@ button.active{
 }
 
 .video {
-    background-color: lightcoral;
+    background-color: var(--dark-background-color);
     position: relative;
     overflow: hidden;
     aspect-ratio: 16/9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 video {
@@ -175,6 +178,12 @@ video {
     left: 0;
     width: 100%;
     height: 100%;
+}
+
+figcaption {
+    font-size: 33px;
+    text-align: center;
+    color: var(--light-text-color);
 }
 
 main {
