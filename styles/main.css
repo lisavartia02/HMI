@@ -248,6 +248,11 @@ p {
     .book-btn a {
         color: var(--dark-text-color);
     }
+    
+    .book-btn a::after{
+        display:none;
+    }
+
 
   }
 
