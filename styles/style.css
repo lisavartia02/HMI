@@ -141,11 +141,9 @@ button.active{
     padding: 10px 20px;
     background-color: var(--light-text-color);
     border-radius: 10px;
-    
+     color: var(--dark-text-color);
 }
-.review-btn a {
-    color: var(--dark-text-color);
-}
+   
 
 .video-container-text {
     margin-bottom: 30px;
