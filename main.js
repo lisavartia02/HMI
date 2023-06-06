@@ -90,6 +90,4 @@ function handleMediaQuery(event) {
 }
 
 let autoSlideShow;
-
-isDesktop.addListener(handleMediaQuery);
 handleMediaQuery(isDesktop);
