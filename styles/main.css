@@ -231,7 +231,7 @@ p {
         left: 50%;
         background-color: var(--light-text-color);
         transform-origin: center;
-        transition: width 0.25s ease-out;
+        transition: width 0.15s ease-out;
       }
       
       .navbar a:hover::after {

@@ -149,7 +149,6 @@ section{
 .galleri .box-container .box .image{
     position: relative;
     text-align: center;
-    padding-top: 2rem;
     overflow: hidden;
     gap: 4rem;
 }
