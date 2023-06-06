@@ -389,6 +389,7 @@ main a img {
 
 .video {
     width: 60vw;
+    max-width: 900px;
 }
 
 main li {
