@@ -1,8 +1,24 @@
+.row div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
 .row h2 {
     font-size: 33px;
     color: #000000;
 }
 
+.row p {
+    font-size: 20px; 
+    color: #000000; 
+    padding: 5rem 0; 
+    padding-top: 1rem; 
+    line-height: 34px; 
+    padding: 1rem 0; 
+    line-height: 1.5;
+}
 
 .heading{
     text-align: center;
@@ -37,7 +53,7 @@ section{
 .døre{
     display: flex;
     align-items: center;
-    min-height: 100vh;
+    height: 100vh;
     background: url(../assets/image\ 45\ \(1\).png) no-repeat;
     background-size: cover;
     background-position: center; 
@@ -137,11 +153,6 @@ section{
     overflow: hidden;
     gap: 4rem;
 }
-.galleri .box-container .box .image img{
-    height: 25rem;
-    width: 30rem;
-    gap: 4rem;
-}
 
 .galleri .box-container .box:hover .image img{
     transform: scale(1.1);
@@ -153,6 +164,18 @@ section{
 
 @media (min-width: 768px) {
     .row h2 {
-        
+    }
+
+    .galleri .box-container .box .image img{
+        height: 25rem;
+        width: 30rem;
+        gap: 4rem;
+    }
+    
+}
+
+@media (min-width: 1024px) {
+    .row div {
+        display: block;
     }
 }
