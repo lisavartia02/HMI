@@ -63,7 +63,7 @@ section{
     max-width: 50rem;
 }
 
-.døre .content h3{
+.døre .content h1{
     font-size: 64px;
     color: #ffffff;
     position: absolute;
@@ -101,7 +101,7 @@ section{
     object-fit: cover;
 }
 
-.vinduer .row .foto-container h3{
+.vinduer .row .foto-container h1{
     position: absolute;
     top: 50%;
     transform: rotateY('-50%');
@@ -163,7 +163,8 @@ section{
 }
 
 @media (min-width: 768px) {
-    .row h2 {
+    .row p {
+        font-size: 35px;
     }
 
     .galleri .box-container .box .image img{

@@ -41,7 +41,7 @@ section{
     max-width: 50rem;
 }
 
-.hegn .content h3{
+.hegn .content h2{
     font-size: 64px;
     color: #ffffff;
 }
@@ -77,7 +77,7 @@ section{
     float: right;
 }
 
-.Hegn .row .foto-container h2{
+.Hegn .row .foto-container h1{
     position: absolute;
     top: 50%;
     transform: rotateY('-50%');
@@ -91,7 +91,7 @@ section{
 
 
 
-.Hegn .row h2{
+.Hegn .row h1{
     font-size: 54px;
     color: #000000;
 }
