@@ -11,14 +11,32 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Montserrat', sans-serif;
-    /* font-family: 'IBM Plex Serif', serif; */
+    /* font-family: 'Montserrat', sans-serif; */
+    font-family: 'IBM Plex Serif', serif;
     text-decoration: none;
 }
 
 
 body {
     background-color: var(--light-background-color);
+}
+
+h1 {
+    font-size: 42px;
+}
+h2 {
+    font-size: 33px;
+}
+h3 {
+    font-size: 26px;
+}
+h4 {
+    font-size: 20px;
+}
+
+p {
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .mobile {
@@ -167,8 +185,10 @@ body {
         margin-bottom: 10px;
     }
 
+
     .dropdown-menu:hover .dropdown-content-menu {
         display: block;
+        z-index: 2;
     }
 
  
@@ -190,19 +210,44 @@ body {
         left: 0;
     }
 
-    .desktop li a, .desktop li div {
-        font-size: 25px;
-    }
-
     .navbar {
         gap: 64px;
     }
 
+    .navbar a {
+        display: inline-block;
+        position: relative;
+        color: var(--light-text-color);
+    }
+
+  
+      .navbar a::after {
+        content: '';
+        position: absolute;
+        width: 0;
+        transform: translateX(-50%);
+        height: 2px;
+        bottom: 0;
+        left: 50%;
+        background-color: var(--light-text-color);
+        transform-origin: center;
+        transition: width 0.25s ease-out;
+      }
+      
+      .navbar a:hover::after {
+        width: 100%;
+        transform: translateX(-50%);
+      }
+
+
     .book-btn {
         position: absolute;
         right: 20px;
+       
     }
-
+    .book-btn a {
+        color: var(--dark-text-color);
+    }
 
   }
 
@@ -217,11 +262,11 @@ body {
     background-color: var(--dark-background-color);
     flex-direction: column;
     margin: 20px 0;
+    padding-bottom: 20px;
 }
 
 #kontakt h2 {
     color: var(--light-text-color);
-    font-size: 40px;
     text-align: center;
     margin: 40px 0 20px 0;
 }
@@ -250,8 +295,8 @@ input, textarea {
     border: none;
     margin-bottom: 13px;
     padding: 10px;
-    font-family: 'IBM Plex Serif', serif;
     font-size: 16px;
+    font-family: 'IBM Plex Serif', serif;
 }
 
 textarea {
@@ -301,7 +346,7 @@ input[type="submit"] {
 }
 
 .icons {
-    height: 60px;
+    height: 40px;
 }
 
 .phone-img {
@@ -389,7 +434,6 @@ footer {
 
 footer h4{
     text-transform: uppercase;
-    font-size: 20px;
     color: var(--light-text-color);
     text-align: center;
 }
@@ -422,7 +466,7 @@ footer img {
 }
 
 .footer-logo {
-    height: 80px;
+    height: 90px;
     margin: 25px ;
 }
 
@@ -478,5 +522,21 @@ footer img {
     }
     .flex {
         gap: 0;
+    }
+
+    h1 {
+        font-size: 33px;
+    }
+    h2 {
+        font-size: 26px;
+    }
+    h3 {
+        font-size: 20px;
+    }
+    h4 {
+        font-size: 16px;
+    }
+    p {
+        font-size: 16px;
     }
 }

@@ -1,3 +1,8 @@
+.row h2 {
+    font-size: 33px;
+    color: #000000;
+}
+
 
 .heading{
     text-align: center;
@@ -144,4 +149,10 @@ section{
 .galleri .box-container .box .content{
     padding: 2rem;
     text-align: center;
+}
+
+@media (min-width: 768px) {
+    .row h2 {
+        
+    }
 }

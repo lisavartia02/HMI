@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Erfarent Tømrerfirma i Taastrup - Skræddersyet tømrerarbejde til Dine Unikke Behov.">
     <title>HMI Tømrermester</title>
 
     <link
@@ -123,15 +124,10 @@
 
     <header>
       <picture>
-        <!-- Source for screens between 320px and 593px -->
-        <source
-          media="(min-width: 320px) and (max-width: 593px)"
-          srcset="/assets/header-img.png"
-        />
-
+       
         <!-- Default source for all other screen sizes -->
         <source
-          media="(min-width: 594px) and (max-width: 1440px)"
+          media="(min-width: 320px) and (max-width: 1440px)"
           srcset="/assets/header-img-big.png"
         />
 
@@ -142,14 +138,12 @@
       </picture>
 
       <div class="text-overlay">
-        <h1>Fra drøm til virklighed</h1>
+        <h1>Fra drøm til <br> virklighed</h1>
         <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum
-          obcaecati omnis quisquam repellat quae ratione, consequatur ab quia
-          tenetur distinctio.
+          Overvejer du hjemmerenovering? Vores tømrervirksomhed, HMI Tømrermester, baseret i Taastarp, kan gøre din vision til virkelighed på hele Sjælland, Danmark."
         </p>
         <div class="book-btn-header">
-          <a href="pages/kontakt.html">Book a meeting</a>
+          <a href="pages/kontakt.html">Book et møde</a>
         </div>
         
       </div>
@@ -267,27 +261,25 @@
       </div>
     </div>
     <a
-    href="https://www.google.com/search?q=hmi+t%C3%B8mrermester&oq=HMI+t%C3%B8mrermester&aqs=chrome.0.69i59j69i61l3.5902j0j7&sourceid=chrome&ie=UTF-8#lrd=0x822e2401e20de571:0x844942653872ffd8,1,,,,"
+    href="https://www.google.com/search?q=hmi+t%C3%B8mrermester&oq=HMI+t%C3%B8mrermester&aqs=chrome.0.69i59j69i61l3.5902j0j7&sourceid=chrome&ie=UTF-8#lrd=0x822e2401e20de571:0x844942653872ffd8,1,,,," target="_blank"
     class="review-btn">Skriv en anmendelse</a>
 
     </section>
 
     <section class="video-container">
       <div class="video-container-text">
-        <h2>HMI Tømrermester klarer tømreropgaver i Sjællands område</h2>
-
-      <p>Hvorfor skal DU vælge os?</p>
+        <h2>HMI Tømrermester</h2>
+      <p>Klarer tømreropgaver i Sjællands område. Skab drømmeomgivelserne, som du Altid har Ønsket dig!</p>
       </div>
       
 
       <div class="video">
-        <iframe
+        <video
           src="assets/starte-projekt.mp4"
-          frameborder="0"
-          loading="lazy"
-          title="Hvorfor du ska vælge os som tømrerfirma"
-          allowfullscreen="true"
-        ></iframe>
+          controls
+          autoplay="false"
+        ></video>
+        <figcaption>Hvorfor du ska vælge os som tømrerfirma</figcaption>
       </div>
     </section>
 
@@ -296,18 +288,24 @@
 
       <div>
         <div class="main-ydelse">
-          <ul>
-            <li><a href="ydelse/døre.html">Døre og viduer</a></li>
-            <li><a href="ydelse/gulv.html">Gulv</a></li>
-            <li><a href="ydelse/hegn.html">Hegn</a></li>
-            <li><a href="ydelse/terrasse.html">Terrasse</a></li>
+          <ul class="main-ul-1">
+            <li>
+              <a href="ydelse/døre.html">
+                <img src="/assets/window.jpg" alt="vindue med to urtepotter og en tekande">Døre og viduer</a></li>
+            <li><a href="ydelse/gulv.html">
+              <img src="/assets/floor.jpg" alt="træ gulv">
+              Gulv</a></li>
+            <li><a href="ydelse/hegn.html"><img src="/assets/fence.jpg" alt="hvidt hegn og blomster">Hegn</a></li>
+            <li><a href="ydelse/terrasse.html"><img src="/assets/terrace.jpg" alt="
+              terrasse med havemøbler"> Terrasse</a></li>
           </ul>
 
-          <ul>
-            <li><a href="ydelse/køkken-montage.html">Køkken montage</a></li>
-            <li><a href="ydelse/gipsarbejde.html">Gipsarbejde</a></li>
-            <li><a href="ydelse/renovering.html">Renovering</a></li>
-            <li><a href="ydelse/andre-opgaver.html">Andre opgaver</a></li>
+          <ul class="main-ul-2">
+            <li><a href="ydelse/køkken-montage.html"><img src="/assets/kitchen.jpg" alt="et køkken">Køkken montage</a></li>
+            <li><a href="ydelse/gipsarbejde.html"><img src="/assets/plaster.jpg" alt="gipsvæg og planter">Gipsarbejde</a></li>
+            <li><a href="ydelse/renovering.html"><img src="/assets/renovation.jpg" alt="badværelse med 
+              badekar">Renovering</a></li>
+            <li><a href="ydelse/andre-opgaver.html"><img src="/assets/other.jpg" alt="HMI-Tømrermester på arbejdstedet">Andre opgaver</a></li>
           </ul>
         </div>
       </div>
@@ -391,7 +389,7 @@
       </div>
     </section>
 
-    <div class="body-filler"></div>
+    <!-- <div class="body-filler"></div> -->
 
     <footer>
       <div class="footer-container">
@@ -434,5 +432,6 @@
     </footer>
 
     <script src="main.js"></script>
+    <script src="index.js"></script>
   </body>
 </html>

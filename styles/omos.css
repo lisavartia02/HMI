@@ -4,6 +4,7 @@
     border-radius: 4px;
     padding: 15px;
     margin: 5px;
+    margin-left: 160px;
 }
 
 .hvem h1 {
@@ -11,21 +12,25 @@
     margin-bottom: 20px;
 }
 
+p {
+    max-width: 600px;
+}
+
 .video {
     display: flex;
     justify-content: center;
     align-items: center;
+    aspect-ratio: 16/8;
 }
 
 video {
-    height: 200px;
-    width: 400px;
+    height: 100%;
+    width: auto;
 }
 
 @media (min-width: 768px) {
-    video {
-        height: 400px;
-        width: 600px;
+    .video {
+       margin: 0 100px;
     }
 }
 /*fatima*/

@@ -1,12 +1,13 @@
 // ---- Lisa ----
-const menu = document.getElementById('menu')
-const list = document.getElementById('list')
+// hamburger menu
+const menu = document.getElementById('menu');
+const list = document.getElementById('list');
 
-const content = document.getElementById('content')
-const dropdown = document.getElementById('dropdown')
-const dropdownContent = document.getElementById('dropdown-content')
+const content = document.getElementById('content');
+const dropdown = document.getElementById('dropdown');
+const dropdownContent = document.getElementById('dropdown-content');
 
-const back = document.getElementById('back')
+const back = document.getElementById('back');
 
 
 function toggleMenu(){
@@ -18,47 +19,31 @@ function toggleMenu(){
     }
     
 
-menu.addEventListener('click', toggleMenu)
+menu.addEventListener('click', toggleMenu);
 
 function toggleContent(){
     if (dropdown.classList.contains('hidden')){
-        dropdown.classList.remove('hidden')
-        list.classList.add('hidden')
+        dropdown.classList.remove('hidden');
+        list.classList.add('hidden');
       
     } else {
-        dropdown.classList.add('hidden')
+        dropdown.classList.add('hidden');
     }
 }
 
-content.addEventListener('click', toggleContent)
+content.addEventListener('click', toggleContent);
 
 back.addEventListener('click', () => {
-    list.classList.remove('hidden')
-    dropdown.classList.add('hidden')
+    list.classList.remove('hidden');
+    dropdown.classList.add('hidden');
 })
 
 // -------
 
-const wrapper = document.querySelector('.wrapper')
-const indicators = [...document.querySelectorAll('.indicators button')]
-
-let currentTestimonial = 0 //Default 0
-
-indicators.forEach((item, i) => {
-    item.addEventListener('click', () => {
-        indicators[currentTestimonial].classList.remove('active')
-        wrapper.style.marginLeft = `-${100 * i}%`
-        item.classList.add('active')
-        currentTestimonial = i
-    })
-})
-
 // -------
+
+
 // --- Shahad ----  
-
-
-
-
 
 const slider = document.querySelector('.slider');
 const sliderContainer = slider.querySelector('.slider-container');
